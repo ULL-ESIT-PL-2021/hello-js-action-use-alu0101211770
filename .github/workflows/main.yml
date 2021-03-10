@@ -11,10 +11,11 @@ jobs:
         uses: actions/checkout@v2
       - name: Hello world action step
         uses: ULL-ESIT-PL-1920/hello-world-javascript-action@v1
-        uses: ULL-ESIT-PL-1920/hello-js-action-aluXXX@optional
         id: hello
         with:
           who-to-greet: 'Alejandro Peraza González'
+      - name: Testing the optional action
+        uses: ULL-ESIT-PL-1920/hello-js-action-aluXXX@optional
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
