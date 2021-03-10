@@ -15,7 +15,7 @@ jobs:
         with:
           who-to-greet: 'Alejandro Peraza González'
       - name: Testing the optional action
-        uses: ULL-ESIT-PL-1920/hello-js-action-aluXXX@optional
+        uses: ULL-ESIT-PL-1920/hello-js-action-alu0101211770@optional
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
